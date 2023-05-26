@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Values and References", "Values and References\Values and References.vbproj", "{196C890F-072E-4033-A188-9840D9113449}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{196C890F-072E-4033-A188-9840D9113449}.Debug|x86.ActiveCfg = Debug|x86
+		{196C890F-072E-4033-A188-9840D9113449}.Debug|x86.Build.0 = Debug|x86
+		{196C890F-072E-4033-A188-9840D9113449}.Release|x86.ActiveCfg = Release|x86
+		{196C890F-072E-4033-A188-9840D9113449}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
