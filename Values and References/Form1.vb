@@ -1,13 +1,29 @@
-﻿Public Class Form1
+﻿Imports System.Runtime.InteropServices.WindowsRuntime
+Imports System.Xml
+
+Public Class Form1
     Private Sub cmdCalculate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCalculate.Click
-        'this subroutine uses Heron's formula to calculate the area of a triangle
-        'http://en.wikipedia.org/wiki/Heron%27s_formula
-        lstOutput1.Items.Add(HeronFormula(txtA.Text, txtB.Text, txtC.Text))
+        Dim a, b, c As Single
+        a = CSng(txtA.Text)
+        b = CSng(txtB.Text)
+        c = CSng(txtC.Text)
+        If checkIfTriangle(a, b, c) Then
+            lstOutput1.Items.Add(HeronFormula(txtA.Text, txtB.Text, txtC.Text))
+        Else
+            lstOutput1.Items.Add("Not a triangle")
+        End If
     End Sub
     Private Function HeronFormula(a As Integer, b As Integer, c As Integer) As Single
         Dim s As Single
         s = (a + b + c) / 2
         Return Math.Sqrt(s * (s - a) * (s - b) * (s - c))
+    End Function
+    Private Function checkIfTriangle(a As Integer, b As Integer, c As Integer) As Boolean
+        Dim outputVal As Boolean = False
+        If (a + b) > c And (a + c) > b And (b + c) > aThen Then
+            outputVal = True
+        End If
+        Return outputVal
     End Function
 
     Private Function fnDouble(ByVal x As Integer) As Integer
