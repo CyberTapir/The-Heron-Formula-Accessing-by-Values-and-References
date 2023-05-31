@@ -20,7 +20,7 @@ Public Class Form1
     End Function
     Private Function checkIfTriangle(a As Integer, b As Integer, c As Integer) As Boolean
         Dim outputVal As Boolean = False
-        If (a + b) > c And (a + c) > b And (b + c) > aThen Then
+        If (a + b) > c And (a + c) > b And (b + c) > a Then
             outputVal = True
         End If
         Return outputVal
